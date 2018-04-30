@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "zoroaster test/spec",
-    "test-watch": "zoroaster test/spec --watch"
+    "test-watch": "zoroaster test/spec --watch",
+    "dev": "node src/require"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.46",
     "@babel/preset-react": "7.0.0-beta.46",
     "@babel/register": "7.0.0-beta.46",
+    "babel-plugin-react-require": "3.0.0",
     "zoroaster": "0.5.3"
   },
   "dependencies": {

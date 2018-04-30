@@ -3,15 +3,18 @@ module.exports = {
         "es6": true,
         "node": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
     "parserOptions": {
-        "ecmaVersion": 2017,
+        "ecmaVersion": 2018,
         "sourceType": "module"
     },
     "rules": {
         "indent": [
             "error",
-            4
+            2
         ],
         "linebreak-style": [
             "error",
@@ -36,6 +39,8 @@ module.exports = {
         "padded-blocks": [
             "error",
             "never"
-        ]
+        ],
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off"
     }
 };
