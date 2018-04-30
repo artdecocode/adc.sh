@@ -1,0 +1,3 @@
+const adcSh = require('./')
+
+adcSh()
